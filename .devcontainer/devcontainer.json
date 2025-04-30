@@ -1,0 +1,16 @@
+{
+    "name": "Neo4j Python Dev",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "python",
+    "workspaceFolder": "/workspaces/gis_starter_neo4j_geolab",
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "ms-python.python",
+          "ms-python.vscode-pylance"
+        ]
+      }
+    },
+    "forwardPorts": [7687, 7474],
+    "postCreateCommand": "pip install --upgrade pip && pip install -r .devcontainer/requirements.txt"
+  }
